@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>숫자야구게임</title>
+    <script>
+      window.onload = function() {
+        document.getElementById('inputBtn').disabled = false;
+      };
+    </script>
+  </head>
+  <body>
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+      <h1>🎰 숫자 야구 ⚾</h1>
+      <p id="instructions">세 자리 숫자를 입력하세요!</p>
+      <div>
+        <input type="text" id="userGuess" maxlength="3" />
+        <button id="inputBtn" onclick="playGame()">입력</button>
+      </div>
+      <p id="result"></p>
+      <br/>
+      <p id="attempts"></p>
+      <p id="answer" style="color: white"></p>
+      <script src="number.js"></script>
+    </div>
+  </body>
+</html>
