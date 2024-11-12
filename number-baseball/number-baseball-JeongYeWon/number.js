@@ -57,7 +57,3 @@ let initializeGame = () => {
   document.getElementById('userGuess').disabled = false;
   document.getElementById('inputBtn').disabled = false;
 }
-
-let resetGame = () => {
-  initializeGame();
-}
